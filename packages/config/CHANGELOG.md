@@ -1,5 +1,122 @@
 # Changelog
 
+## [3.0.0](https://github.com/substance-labs/cow-sdk/compare/sdk-config-v2.3.1...sdk-config-v3.0.0) (2026-06-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* bring cow.fi back ([#863](https://github.com/substance-labs/cow-sdk/issues/863))
+* **chains:** Remove support for Lens.
+* release cow-sdk v7
+
+### ✨ Features
+
+* add API endpoints for partners ([#809](https://github.com/substance-labs/cow-sdk/issues/809)) ([59900e8](https://github.com/substance-labs/cow-sdk/commit/59900e854a336e294ec881bd70bb13e579ff48ec))
+* add isUnderDevelopment flag to chain info ([#597](https://github.com/substance-labs/cow-sdk/issues/597)) ([f502fa9](https://github.com/substance-labs/cow-sdk/commit/f502fa9aea85915ef92192539ec1ff9f2651e534))
+* add monorepo package network images ([#429](https://github.com/substance-labs/cow-sdk/issues/429)) ([56ef05b](https://github.com/substance-labs/cow-sdk/commit/56ef05b84a25955cbe6d1f8f74df0ff0fa2bdfff))
+* Add non-evm chains types & guards & address validators  ([#792](https://github.com/substance-labs/cow-sdk/issues/792)) ([b4b6047](https://github.com/substance-labs/cow-sdk/commit/b4b6047889190f668f6409aeee7079ba6095f9ae))
+* **bridge:** support Near bridge provider ([#642](https://github.com/substance-labs/cow-sdk/issues/642)) ([c7d8633](https://github.com/substance-labs/cow-sdk/commit/c7d86335601cfd772d72dfe65a0e941ce916769a))
+* bring cow.fi back ([#863](https://github.com/substance-labs/cow-sdk/issues/863)) ([d607fd2](https://github.com/substance-labs/cow-sdk/commit/d607fd2cfbc93ace39de04f3a7870f723fdd9b21))
+* **chains:** Remove Lens ([#818](https://github.com/substance-labs/cow-sdk/issues/818)) ([e8c74a0](https://github.com/substance-labs/cow-sdk/commit/e8c74a078e5940901591652164af7b2ffb7b1fa6))
+* create config package ([212c4a7](https://github.com/substance-labs/cow-sdk/commit/212c4a74eae46ff6150138300334e0565f581ad1))
+* **deprecated-chains:** add isDeprecated flag and mark Lens as such ([#801](https://github.com/substance-labs/cow-sdk/issues/801)) ([e0663c6](https://github.com/substance-labs/cow-sdk/commit/e0663c69c0b5d92bae45570f27105d6cfd04b96a))
+* **ink:** reapply "feat/COW-163: Add Ink network ([#781](https://github.com/substance-labs/cow-sdk/issues/781))" ([7c23332](https://github.com/substance-labs/cow-sdk/commit/7c23332dac4f8c91d5f75ae68297906e20f20362))
+* internal ids for evm chains ([#891](https://github.com/substance-labs/cow-sdk/issues/891)) ([1c3c961](https://github.com/substance-labs/cow-sdk/commit/1c3c9619c3d0ee832ce43a2d695ad650c2ec7a18))
+* **lib-agnostic:** migrate latest Bridging changes ([#426](https://github.com/substance-labs/cow-sdk/issues/426)) ([2359d9b](https://github.com/substance-labs/cow-sdk/commit/2359d9b903e80ae5bab0cdb92d8cf52ae250da36))
+* **lib-agnostic:** migrate latest SDK changes ([#427](https://github.com/substance-labs/cow-sdk/issues/427)) ([323bab6](https://github.com/substance-labs/cow-sdk/commit/323bab61eb5adeb4a58bc15e25ffb29d2e1afcbf))
+* migrate to cow.finance domain ([#860](https://github.com/substance-labs/cow-sdk/issues/860)) ([a4e7633](https://github.com/substance-labs/cow-sdk/commit/a4e76333b7a276baec5c977f44b15498550d8e50))
+* **monorepo-config:** adjust all package.json and scripts ([23dc2a5](https://github.com/substance-labs/cow-sdk/commit/23dc2a5db02ce3734b55e1151c8579f9a42a4bc5))
+* move solana to supported chain id ([#873](https://github.com/substance-labs/cow-sdk/issues/873)) ([da8a7c2](https://github.com/substance-labs/cow-sdk/commit/da8a7c24cd07afcd465199844c480ebe3e81383d))
+* **new-chains:** add q4 chains ([#606](https://github.com/substance-labs/cow-sdk/issues/606)) ([2501382](https://github.com/substance-labs/cow-sdk/commit/2501382e80acb7f6bb0f87adbb5a9325de2c56cc))
+* **order-book:** add bearer token support in ApiContext ([#825](https://github.com/substance-labs/cow-sdk/issues/825)) ([d605ba4](https://github.com/substance-labs/cow-sdk/commit/d605ba4579d3fe12b043ecb22d2608018e0962ba))
+* refactor config ([f7fcf73](https://github.com/substance-labs/cow-sdk/commit/f7fcf73a7fde59b47a5aa2432fddea8e1648fd94))
+* release cow-sdk v7 ([6cd3e57](https://github.com/substance-labs/cow-sdk/commit/6cd3e573687b1ffdbc0fdcb8cdbb414d88546e38))
+* **sdk-agnostic-lib:** create cow trading package ([#368](https://github.com/substance-labs/cow-sdk/issues/368)) ([0a4534a](https://github.com/substance-labs/cow-sdk/commit/0a4534aababce4f5d8bab991cd6ae9f51842d719))
+* **sdk-agnostic-lib:** Create weiroll package ([#371](https://github.com/substance-labs/cow-sdk/issues/371)) ([8f6a2e1](https://github.com/substance-labs/cow-sdk/commit/8f6a2e16e5e7a43a5afc43cf5faab174be916b2e))
+* test release of packages ([#485](https://github.com/substance-labs/cow-sdk/issues/485)) ([74109d8](https://github.com/substance-labs/cow-sdk/commit/74109d893417c14c1ee476be8040704183e800c6))
+* update settlement and vault relayer contracts on staging ([#807](https://github.com/substance-labs/cow-sdk/issues/807)) ([0f9a03e](https://github.com/substance-labs/cow-sdk/commit/0f9a03e6bfa3468630e46735f7583618ae711b73))
+* use aws for token and chain images ([#724](https://github.com/substance-labs/cow-sdk/issues/724)) ([1b23c5e](https://github.com/substance-labs/cow-sdk/commit/1b23c5e5f7e1763b710b95f444ad052395808277))
+* use aws for token and chain images ([#724](https://github.com/substance-labs/cow-sdk/issues/724)) ([2a8e220](https://github.com/substance-labs/cow-sdk/commit/2a8e2205acc5143efecbc9caee89d01f32570e0d))
+
+
+### 🐛 Bug Fixes
+
+* **config:** make native token address lower in url ([#499](https://github.com/substance-labs/cow-sdk/issues/499)) ([96e0dc6](https://github.com/substance-labs/cow-sdk/commit/96e0dc6fd837f9b67025d6e05959ad9b773c0ed4))
+* fix gnosis native token url ([#501](https://github.com/substance-labs/cow-sdk/issues/501)) ([4d5176e](https://github.com/substance-labs/cow-sdk/commit/4d5176e85594f45d96a5d9d7aa7285cbf3cfebf2))
+* **ink:** swap Ink logo with filled version ([#783](https://github.com/substance-labs/cow-sdk/issues/783)) ([bfc0ba7](https://github.com/substance-labs/cow-sdk/commit/bfc0ba72108bf376bdcdd2194ba312c6b8a50e3a))
+* linea no longer under dev ([#734](https://github.com/substance-labs/cow-sdk/issues/734)) ([548bf29](https://github.com/substance-labs/cow-sdk/commit/548bf2917a71117bf981b254d0211baacdbc9fff))
+* migrate lens eth-flow contract address ([#468](https://github.com/substance-labs/cow-sdk/issues/468)) ([91c87b2](https://github.com/substance-labs/cow-sdk/commit/91c87b2e31c1b80ef1703d986f4c49811897f3a0))
+* **networks:** remove isUnderDevelopment flag from Ink ([#803](https://github.com/substance-labs/cow-sdk/issues/803)) ([8baeaa6](https://github.com/substance-labs/cow-sdk/commit/8baeaa657f0f7760ea26917b68cbf0ab70ac4905))
+* **networks:** remove isUnderDevelopment flag from Ink ([#803](https://github.com/substance-labs/cow-sdk/issues/803)) ([8baeaa6](https://github.com/substance-labs/cow-sdk/commit/8baeaa657f0f7760ea26917b68cbf0ab70ac4905))
+* remove isUnderDevelopment flag from plasma ([#739](https://github.com/substance-labs/cow-sdk/issues/739)) ([b9cf7b7](https://github.com/substance-labs/cow-sdk/commit/b9cf7b7a6405d27b11719128a7680a771bc3e602))
+* support decimals in protocolFeeBps ([#787](https://github.com/substance-labs/cow-sdk/issues/787)) ([f53ae65](https://github.com/substance-labs/cow-sdk/commit/f53ae65931d85e354779767ed67e0e4df944a2bc))
+* trigger release please ([#890](https://github.com/substance-labs/cow-sdk/issues/890)) ([cc11990](https://github.com/substance-labs/cow-sdk/commit/cc11990047e4d77a450582a84a07a453f4a7ccc8))
+* unify spelling for chain explorers ([#773](https://github.com/substance-labs/cow-sdk/issues/773)) ([e89c4ba](https://github.com/substance-labs/cow-sdk/commit/e89c4baa769b9f14982e8f4c7d19fdb8a6e2e5f6))
+* use adaptToken if contract address is empty ([#850](https://github.com/substance-labs/cow-sdk/issues/850)) ([d57c397](https://github.com/substance-labs/cow-sdk/commit/d57c3972d9104fbf846e15a831d004d4e20b961f))
+* use pnpm trusted publishing ([#841](https://github.com/substance-labs/cow-sdk/issues/841)) ([1885b6f](https://github.com/substance-labs/cow-sdk/commit/1885b6fa2a006670e3bb51a2ac8b60ed9c157eba))
+* use standard npm publishing ([#839](https://github.com/substance-labs/cow-sdk/issues/839)) ([b2e2966](https://github.com/substance-labs/cow-sdk/commit/b2e2966dbe96b7e20880af966e6e6024055d2845))
+* use the blue linea logo instead of the yellow one ([#717](https://github.com/substance-labs/cow-sdk/issues/717)) ([e044446](https://github.com/substance-labs/cow-sdk/commit/e0444463b7097b8ebc0134aeacfdf460e4b51684))
+
+
+### ♻️ Refactoring
+
+* move cow-error and wallets.ts and remove duplicate types ([4a7e5d6](https://github.com/substance-labs/cow-sdk/commit/4a7e5d6d035ccebf05cce437f0409220f39b643a))
+* rename util function ([#899](https://github.com/substance-labs/cow-sdk/issues/899)) ([095e280](https://github.com/substance-labs/cow-sdk/commit/095e280ce0fa99f6fc71efd61ea146c70f061684))
+
+
+### 📚 Documentation
+
+* update README to focus on main use cases ([#493](https://github.com/substance-labs/cow-sdk/issues/493)) ([a05cb1b](https://github.com/substance-labs/cow-sdk/commit/a05cb1ba11b5f9895d7cfe6262cf74c4089fd73c))
+
+
+### 🔧 Miscellaneous
+
+* migrate latest changes from main 26-08-2025 ([#445](https://github.com/substance-labs/cow-sdk/issues/445)) ([698937c](https://github.com/substance-labs/cow-sdk/commit/698937c0feff3a254873371bc1ef791917e6294e))
+* release main ([#453](https://github.com/substance-labs/cow-sdk/issues/453)) ([36080c1](https://github.com/substance-labs/cow-sdk/commit/36080c1955f5f161bebce7867af110f6938e5c95))
+* release main ([#467](https://github.com/substance-labs/cow-sdk/issues/467)) ([ed2977a](https://github.com/substance-labs/cow-sdk/commit/ed2977a82bb2f4b43de900840848e33532d001f0))
+* release main ([#486](https://github.com/substance-labs/cow-sdk/issues/486)) ([cf53df2](https://github.com/substance-labs/cow-sdk/commit/cf53df2d0f5e96a544165547958ecc959c1948d7))
+* release main ([#500](https://github.com/substance-labs/cow-sdk/issues/500)) ([76c5185](https://github.com/substance-labs/cow-sdk/commit/76c5185d4b827d185af11bef9435fbed87484b0b))
+* release main ([#502](https://github.com/substance-labs/cow-sdk/issues/502)) ([c452d8e](https://github.com/substance-labs/cow-sdk/commit/c452d8e53bc0dcd79052b1877d2c48a32777093e))
+* release main ([#503](https://github.com/substance-labs/cow-sdk/issues/503)) ([532d8eb](https://github.com/substance-labs/cow-sdk/commit/532d8eb2a0a0f9ec5775e566fe2507f1ccc4f961))
+* release main ([#515](https://github.com/substance-labs/cow-sdk/issues/515)) ([912e315](https://github.com/substance-labs/cow-sdk/commit/912e31551440ebfa61d7d2f5c846d61162559448))
+* release main ([#605](https://github.com/substance-labs/cow-sdk/issues/605)) ([c9efd22](https://github.com/substance-labs/cow-sdk/commit/c9efd22e6c934e95cb0e88a684b3a973b7ac3cce))
+* release main ([#648](https://github.com/substance-labs/cow-sdk/issues/648)) ([5dd3bf5](https://github.com/substance-labs/cow-sdk/commit/5dd3bf5659852590d5d46317bfc19c56e125ca59))
+* release main ([#700](https://github.com/substance-labs/cow-sdk/issues/700)) ([a0ce28d](https://github.com/substance-labs/cow-sdk/commit/a0ce28d18e51b50e947bc104228686d558861391))
+* release main ([#718](https://github.com/substance-labs/cow-sdk/issues/718)) ([87683ec](https://github.com/substance-labs/cow-sdk/commit/87683ecc507e59d70a6d623faba83cda65ca44cc))
+* release main ([#727](https://github.com/substance-labs/cow-sdk/issues/727)) ([af17e9a](https://github.com/substance-labs/cow-sdk/commit/af17e9a772f608c5c2751bce25549062a38702b6))
+* release main ([#730](https://github.com/substance-labs/cow-sdk/issues/730)) ([e7e4157](https://github.com/substance-labs/cow-sdk/commit/e7e415700724d6cc62f1f0590dbf47d908a9a55e))
+* release main ([#735](https://github.com/substance-labs/cow-sdk/issues/735)) ([c17655c](https://github.com/substance-labs/cow-sdk/commit/c17655c588a735bd12c1219317f5b290cf9d9a34))
+* release main ([#744](https://github.com/substance-labs/cow-sdk/issues/744)) ([110c279](https://github.com/substance-labs/cow-sdk/commit/110c279db08dd981c0bda2c6b7e8c08ea3c81325))
+* release main ([#772](https://github.com/substance-labs/cow-sdk/issues/772)) ([cd30d4f](https://github.com/substance-labs/cow-sdk/commit/cd30d4fe42c4b2d1bbe592026a097d6b76edd735))
+* release main ([#780](https://github.com/substance-labs/cow-sdk/issues/780)) ([3fa1e95](https://github.com/substance-labs/cow-sdk/commit/3fa1e951c248fb8c72c7b7a3cd2e96470e1582df))
+* release main ([#784](https://github.com/substance-labs/cow-sdk/issues/784)) ([8284aa4](https://github.com/substance-labs/cow-sdk/commit/8284aa47954ab4880b6bd87b4b09f23656b264fd))
+* release main ([#788](https://github.com/substance-labs/cow-sdk/issues/788)) ([9d7eecb](https://github.com/substance-labs/cow-sdk/commit/9d7eecb86b40c15ea2c368c02213e166ea9b6cd2))
+* release main ([#790](https://github.com/substance-labs/cow-sdk/issues/790)) ([4109197](https://github.com/substance-labs/cow-sdk/commit/410919754c2f07e99a92787bf7b3c503ac34c9ea))
+* release main ([#802](https://github.com/substance-labs/cow-sdk/issues/802)) ([5583ca4](https://github.com/substance-labs/cow-sdk/commit/5583ca446f498416565b79485bcaf7708f1ba224))
+* release main ([#805](https://github.com/substance-labs/cow-sdk/issues/805)) ([adbc6a9](https://github.com/substance-labs/cow-sdk/commit/adbc6a98eb15b02a87215a1bd446982553219b41))
+* release main ([#811](https://github.com/substance-labs/cow-sdk/issues/811)) ([816c990](https://github.com/substance-labs/cow-sdk/commit/816c990e87a39a122c918d6748b2f254350c4be5))
+* release main ([#812](https://github.com/substance-labs/cow-sdk/issues/812)) ([4981e10](https://github.com/substance-labs/cow-sdk/commit/4981e1060718f701ad3a6a096e71ef2e544f29fe))
+* release main ([#819](https://github.com/substance-labs/cow-sdk/issues/819)) ([5f7ecfb](https://github.com/substance-labs/cow-sdk/commit/5f7ecfba74abc721b80c5fe6f4997f9518c40788))
+* release main ([#826](https://github.com/substance-labs/cow-sdk/issues/826)) ([baaa708](https://github.com/substance-labs/cow-sdk/commit/baaa7088ac15b89fb83310e54aa52f09d19132ff))
+* release main ([#832](https://github.com/substance-labs/cow-sdk/issues/832)) ([5dafcb8](https://github.com/substance-labs/cow-sdk/commit/5dafcb8ec5593250dba1ff6e9fdbf8eb11d974cf))
+* release main ([#836](https://github.com/substance-labs/cow-sdk/issues/836)) ([a7e1af9](https://github.com/substance-labs/cow-sdk/commit/a7e1af993f501e313fb90573148b3d2d42e5168a))
+* release main ([#840](https://github.com/substance-labs/cow-sdk/issues/840)) ([1a22c69](https://github.com/substance-labs/cow-sdk/commit/1a22c69592e283bb1a15ece9799a5b6f8c446765))
+* release main ([#842](https://github.com/substance-labs/cow-sdk/issues/842)) ([c4c238d](https://github.com/substance-labs/cow-sdk/commit/c4c238d990d2089a66f9d8dc7401cd71b63d394b))
+* release main ([#857](https://github.com/substance-labs/cow-sdk/issues/857)) ([17fcfc5](https://github.com/substance-labs/cow-sdk/commit/17fcfc590be8529dc4fe05b1c472fef1b07b47f4))
+* release main ([#861](https://github.com/substance-labs/cow-sdk/issues/861)) ([c178e68](https://github.com/substance-labs/cow-sdk/commit/c178e68beaf46bb33b1ad2ec97212eec62172816))
+* release main ([#864](https://github.com/substance-labs/cow-sdk/issues/864)) ([a5207e0](https://github.com/substance-labs/cow-sdk/commit/a5207e0dba212942ecf5564c8d01c9c75c77f647))
+* release main ([#886](https://github.com/substance-labs/cow-sdk/issues/886)) ([5115efe](https://github.com/substance-labs/cow-sdk/commit/5115efeb6f6f591c5eae653c63c5c5930eb24331))
+* release main ([#887](https://github.com/substance-labs/cow-sdk/issues/887)) ([74393ee](https://github.com/substance-labs/cow-sdk/commit/74393ee2923a2932584998169daca6ce3c2da60c))
+* release main ([#889](https://github.com/substance-labs/cow-sdk/issues/889)) ([8659102](https://github.com/substance-labs/cow-sdk/commit/865910213586d59f709c8e34726f799503bdfafb))
+* release main ([#894](https://github.com/substance-labs/cow-sdk/issues/894)) ([6ca7944](https://github.com/substance-labs/cow-sdk/commit/6ca794476e3411ab5a3774d6cd88804b9f875d29))
+* release main ([#900](https://github.com/substance-labs/cow-sdk/issues/900)) ([3fdbda2](https://github.com/substance-labs/cow-sdk/commit/3fdbda2042db284c73e3b16b90961e1c31a475cd))
+* remove unused lens assets ([#823](https://github.com/substance-labs/cow-sdk/issues/823)) ([9cb9513](https://github.com/substance-labs/cow-sdk/commit/9cb9513e49aa22a3a0f33546184b17f89d3d9c76))
+* revert release ([#833](https://github.com/substance-labs/cow-sdk/issues/833)) ([0c40a9b](https://github.com/substance-labs/cow-sdk/commit/0c40a9b3ee828c7ede66576f02e1b571e96140cd))
+* revert revert Ink network ([#789](https://github.com/substance-labs/cow-sdk/issues/789)) ([a00dbbd](https://github.com/substance-labs/cow-sdk/commit/a00dbbd6a26238bcee2d4452487d16551560c59f))
+* revert use aws for token and chain images ([#724](https://github.com/substance-labs/cow-sdk/issues/724)) ([f73bc96](https://github.com/substance-labs/cow-sdk/commit/f73bc96156796ce4928f64f963295501dfc69a5c))
+* **sdk-agnostic-lib:** merge multiple PRs to avoid conflicts and speed up base branch sync ([#354](https://github.com/substance-labs/cow-sdk/issues/354)) ([55d3068](https://github.com/substance-labs/cow-sdk/commit/55d3068c52217dd2618d8c180ab4fed8c9334c72))
+* update sdk-config tsconfig ([8666af4](https://github.com/substance-labs/cow-sdk/commit/8666af48c60cd1d6e945f8412b192029299f7c90))
+
 ## [2.3.1](https://github.com/cowprotocol/cow-sdk/compare/sdk-config-v2.3.0...sdk-config-v2.3.1) (2026-06-15)
 
 

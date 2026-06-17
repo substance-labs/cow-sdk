@@ -1,5 +1,132 @@
 # Changelog
 
+## [4.0.0](https://github.com/substance-labs/cow-sdk/compare/sdk-flash-loans-v3.2.0...sdk-flash-loans-v4.0.0) (2026-06-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* bring cow.fi back ([#863](https://github.com/substance-labs/cow-sdk/issues/863))
+* **chains:** Remove support for Lens.
+
+### ✨ Features
+
+* allow aave sdk to provide the helper addresses in the construct… ([#666](https://github.com/substance-labs/cow-sdk/issues/666)) ([828ae7d](https://github.com/substance-labs/cow-sdk/commit/828ae7d120a06b9d550c9f7c1e52bb86f783d0b8))
+* bring cow.fi back ([#863](https://github.com/substance-labs/cow-sdk/issues/863)) ([d607fd2](https://github.com/substance-labs/cow-sdk/commit/d607fd2cfbc93ace39de04f3a7870f723fdd9b21))
+* **chains:** Remove Lens ([#818](https://github.com/substance-labs/cow-sdk/issues/818)) ([e8c74a0](https://github.com/substance-labs/cow-sdk/commit/e8c74a078e5940901591652164af7b2ffb7b1fa6))
+* **flash-loans:** add dappId to aave hooks ([#645](https://github.com/substance-labs/cow-sdk/issues/645)) ([b5312af](https://github.com/substance-labs/cow-sdk/commit/b5312af11d2b164c125aa899a56ee0b1645ba18f))
+* **flash-loans:** support debtSwap and repayCollateral ([#616](https://github.com/substance-labs/cow-sdk/issues/616)) ([cdd9f8a](https://github.com/substance-labs/cow-sdk/commit/cdd9f8a3fdc73be56d727f0ec320c2f11516f778))
+* **flash-loans:** support flexible gasLimit options ([#736](https://github.com/substance-labs/cow-sdk/issues/736)) ([14cbb36](https://github.com/substance-labs/cow-sdk/commit/14cbb362a68462dddc028d5f5852f038f349daa3))
+* **flash-loans:** support Mainnet, Gnosis, and Base for AAVE ([#657](https://github.com/substance-labs/cow-sdk/issues/657)) ([c7f2327](https://github.com/substance-labs/cow-sdk/commit/c7f2327f4672a899c2775dd8ab8d3543ad08cdd6))
+* **flash-loans:** update smartcontract addresses ([#676](https://github.com/substance-labs/cow-sdk/issues/676)) ([3d78116](https://github.com/substance-labs/cow-sdk/commit/3d781167dfe6a02646c546b481f058d2ed0f664f))
+* **ink:** reapply "feat/COW-163: Add Ink network ([#781](https://github.com/substance-labs/cow-sdk/issues/781))" ([7c23332](https://github.com/substance-labs/cow-sdk/commit/7c23332dac4f8c91d5f75ae68297906e20f20362))
+* migrate to cow.finance domain ([#860](https://github.com/substance-labs/cow-sdk/issues/860)) ([a4e7633](https://github.com/substance-labs/cow-sdk/commit/a4e76333b7a276baec5c977f44b15498550d8e50))
+* move solana to supported chain id ([#873](https://github.com/substance-labs/cow-sdk/issues/873)) ([da8a7c2](https://github.com/substance-labs/cow-sdk/commit/da8a7c24cd07afcd465199844c480ebe3e81383d))
+* per-package test coverage badges, updated in CI ([#895](https://github.com/substance-labs/cow-sdk/issues/895)) ([c73246c](https://github.com/substance-labs/cow-sdk/commit/c73246cc52c4fc79b2628b7c5f580695fd3dc1e2))
+
+
+### 🐛 Bug Fixes
+
+* fix lint issues ([#631](https://github.com/substance-labs/cow-sdk/issues/631)) ([2152be4](https://github.com/substance-labs/cow-sdk/commit/2152be4f75017f033ca7eba0959d82691cef6ee3))
+* **flash-loans:** add hooksGasLimit parameter ([#691](https://github.com/substance-labs/cow-sdk/issues/691)) ([32ebb2b](https://github.com/substance-labs/cow-sdk/commit/32ebb2b2ae1a27e31b3ccc141ccf7ec610db2ed6))
+* **flash-loans:** simplify CollateralSwapOrder interface ([#877](https://github.com/substance-labs/cow-sdk/issues/877)) ([0edf7d1](https://github.com/substance-labs/cow-sdk/commit/0edf7d158a65403190de3348097a2e464e24e28d))
+* flashloan fee calculation now matches aave's ([#622](https://github.com/substance-labs/cow-sdk/issues/622)) ([8d11b7f](https://github.com/substance-labs/cow-sdk/commit/8d11b7fbbc8ff797253f26772a0e5c940286f2d9))
+* make adapters hook helpers public ([#639](https://github.com/substance-labs/cow-sdk/issues/639)) ([f8760ae](https://github.com/substance-labs/cow-sdk/commit/f8760ae6084f7df729f140f9bea799566c217287))
+* pump flashloans sdk version ([#687](https://github.com/substance-labs/cow-sdk/issues/687)) ([d31fb42](https://github.com/substance-labs/cow-sdk/commit/d31fb421424ed3df81de09b0e2d36b7023466931))
+* support decimals in protocolFeeBps ([#787](https://github.com/substance-labs/cow-sdk/issues/787)) ([f53ae65](https://github.com/substance-labs/cow-sdk/commit/f53ae65931d85e354779767ed67e0e4df944a2bc))
+* **trading:** add EIP1271 signature support ([#584](https://github.com/substance-labs/cow-sdk/issues/584)) ([ca9e834](https://github.com/substance-labs/cow-sdk/commit/ca9e834e2b0edf8a757e01383b2218d5ecfbe25e))
+
+
+### 🔧 Miscellaneous
+
+* allow to set the factory contract and aave pools in the sdk ([#680](https://github.com/substance-labs/cow-sdk/issues/680)) ([b90529c](https://github.com/substance-labs/cow-sdk/commit/b90529cd27fdeb4060bc0a53702df6f8104495b7))
+* release main ([#605](https://github.com/substance-labs/cow-sdk/issues/605)) ([c9efd22](https://github.com/substance-labs/cow-sdk/commit/c9efd22e6c934e95cb0e88a684b3a973b7ac3cce))
+* release main ([#618](https://github.com/substance-labs/cow-sdk/issues/618)) ([c23844f](https://github.com/substance-labs/cow-sdk/commit/c23844fd8544a29a17e60509d45b544a21dfb7d3))
+* release main ([#620](https://github.com/substance-labs/cow-sdk/issues/620)) ([b36394a](https://github.com/substance-labs/cow-sdk/commit/b36394a2ba38957edb47ffc4451ea6624d66737b))
+* release main ([#635](https://github.com/substance-labs/cow-sdk/issues/635)) ([bd5c1d9](https://github.com/substance-labs/cow-sdk/commit/bd5c1d998c17379b2386942a0404ad4e0e232b4c))
+* release main ([#637](https://github.com/substance-labs/cow-sdk/issues/637)) ([6909e8d](https://github.com/substance-labs/cow-sdk/commit/6909e8d5e97afadc203be2293865bfb2f9338953))
+* release main ([#643](https://github.com/substance-labs/cow-sdk/issues/643)) ([203dbc6](https://github.com/substance-labs/cow-sdk/commit/203dbc63014f2d03b2affe0d3a09a4d905d4843f))
+* release main ([#646](https://github.com/substance-labs/cow-sdk/issues/646)) ([6e67787](https://github.com/substance-labs/cow-sdk/commit/6e67787c22bf48d787f9ea42272e1308ca98e50f))
+* release main ([#648](https://github.com/substance-labs/cow-sdk/issues/648)) ([5dd3bf5](https://github.com/substance-labs/cow-sdk/commit/5dd3bf5659852590d5d46317bfc19c56e125ca59))
+* release main ([#650](https://github.com/substance-labs/cow-sdk/issues/650)) ([2493612](https://github.com/substance-labs/cow-sdk/commit/24936120e51b0083eda408ab80b8f8ee4115e223))
+* release main ([#667](https://github.com/substance-labs/cow-sdk/issues/667)) ([1b04b9e](https://github.com/substance-labs/cow-sdk/commit/1b04b9e83e5ee30cc7246dbba04ee3ef0c32c62e))
+* release main ([#677](https://github.com/substance-labs/cow-sdk/issues/677)) ([28c687f](https://github.com/substance-labs/cow-sdk/commit/28c687fae75ad6a8c7bfc8b98f301de1cb4ce484))
+* release main ([#681](https://github.com/substance-labs/cow-sdk/issues/681)) ([435715a](https://github.com/substance-labs/cow-sdk/commit/435715a3e8e9559408df1dd1e23080b684650cf8))
+* release main ([#688](https://github.com/substance-labs/cow-sdk/issues/688)) ([5acc4d7](https://github.com/substance-labs/cow-sdk/commit/5acc4d7109f28cdfca402d8cb44fb029e13392d7))
+* release main ([#692](https://github.com/substance-labs/cow-sdk/issues/692)) ([f67efdb](https://github.com/substance-labs/cow-sdk/commit/f67efdb64195da1da07570ce249d230d2f5b975c))
+* release main ([#700](https://github.com/substance-labs/cow-sdk/issues/700)) ([a0ce28d](https://github.com/substance-labs/cow-sdk/commit/a0ce28d18e51b50e947bc104228686d558861391))
+* release main ([#702](https://github.com/substance-labs/cow-sdk/issues/702)) ([1e6b54d](https://github.com/substance-labs/cow-sdk/commit/1e6b54dbaef21a61c362bc2d1567d87f14d7f8a7))
+* release main ([#718](https://github.com/substance-labs/cow-sdk/issues/718)) ([87683ec](https://github.com/substance-labs/cow-sdk/commit/87683ecc507e59d70a6d623faba83cda65ca44cc))
+* release main ([#720](https://github.com/substance-labs/cow-sdk/issues/720)) ([c7348b8](https://github.com/substance-labs/cow-sdk/commit/c7348b8eeaddb371c82631dbf94bfd8b0fb0209b))
+* release main ([#721](https://github.com/substance-labs/cow-sdk/issues/721)) ([d8cb9ec](https://github.com/substance-labs/cow-sdk/commit/d8cb9ec16d16af35f8c2a1387b82fee472acd380))
+* release main ([#726](https://github.com/substance-labs/cow-sdk/issues/726)) ([a6a51e6](https://github.com/substance-labs/cow-sdk/commit/a6a51e6ec3edd9fdb6c1384070ad24a5cac3cb98))
+* release main ([#727](https://github.com/substance-labs/cow-sdk/issues/727)) ([af17e9a](https://github.com/substance-labs/cow-sdk/commit/af17e9a772f608c5c2751bce25549062a38702b6))
+* release main ([#730](https://github.com/substance-labs/cow-sdk/issues/730)) ([e7e4157](https://github.com/substance-labs/cow-sdk/commit/e7e415700724d6cc62f1f0590dbf47d908a9a55e))
+* release main ([#735](https://github.com/substance-labs/cow-sdk/issues/735)) ([c17655c](https://github.com/substance-labs/cow-sdk/commit/c17655c588a735bd12c1219317f5b290cf9d9a34))
+* release main ([#741](https://github.com/substance-labs/cow-sdk/issues/741)) ([32fb8bb](https://github.com/substance-labs/cow-sdk/commit/32fb8bbe6b1172c2666f330d0d50cdc2f7c2554f))
+* release main ([#742](https://github.com/substance-labs/cow-sdk/issues/742)) ([8c8d857](https://github.com/substance-labs/cow-sdk/commit/8c8d857e9c9da59b8793f2f9dfb3ca075891e6e3))
+* release main ([#744](https://github.com/substance-labs/cow-sdk/issues/744)) ([110c279](https://github.com/substance-labs/cow-sdk/commit/110c279db08dd981c0bda2c6b7e8c08ea3c81325))
+* release main ([#751](https://github.com/substance-labs/cow-sdk/issues/751)) ([885d7f7](https://github.com/substance-labs/cow-sdk/commit/885d7f707bf2074dfb80df6ebcf41c12515695e3))
+* release main ([#754](https://github.com/substance-labs/cow-sdk/issues/754)) ([3f2f53c](https://github.com/substance-labs/cow-sdk/commit/3f2f53cdf66520d2f2c8fd82df2b614bc202eb6b))
+* release main ([#762](https://github.com/substance-labs/cow-sdk/issues/762)) ([349f758](https://github.com/substance-labs/cow-sdk/commit/349f758ea15d358e737fb50abdbfaa56fe617316))
+* release main ([#764](https://github.com/substance-labs/cow-sdk/issues/764)) ([eb71e9d](https://github.com/substance-labs/cow-sdk/commit/eb71e9dba6efedb1eff3c5039f1b07bd0554418b))
+* release main ([#772](https://github.com/substance-labs/cow-sdk/issues/772)) ([cd30d4f](https://github.com/substance-labs/cow-sdk/commit/cd30d4fe42c4b2d1bbe592026a097d6b76edd735))
+* release main ([#778](https://github.com/substance-labs/cow-sdk/issues/778)) ([d84e4a3](https://github.com/substance-labs/cow-sdk/commit/d84e4a3a5d918a6ba28879a20798510eb84cbf12))
+* release main ([#779](https://github.com/substance-labs/cow-sdk/issues/779)) ([6387df5](https://github.com/substance-labs/cow-sdk/commit/6387df570750f4411ad57e3aed709b4eb848557c))
+* release main ([#780](https://github.com/substance-labs/cow-sdk/issues/780)) ([3fa1e95](https://github.com/substance-labs/cow-sdk/commit/3fa1e951c248fb8c72c7b7a3cd2e96470e1582df))
+* release main ([#784](https://github.com/substance-labs/cow-sdk/issues/784)) ([8284aa4](https://github.com/substance-labs/cow-sdk/commit/8284aa47954ab4880b6bd87b4b09f23656b264fd))
+* release main ([#788](https://github.com/substance-labs/cow-sdk/issues/788)) ([9d7eecb](https://github.com/substance-labs/cow-sdk/commit/9d7eecb86b40c15ea2c368c02213e166ea9b6cd2))
+* release main ([#790](https://github.com/substance-labs/cow-sdk/issues/790)) ([4109197](https://github.com/substance-labs/cow-sdk/commit/410919754c2f07e99a92787bf7b3c503ac34c9ea))
+* release main ([#791](https://github.com/substance-labs/cow-sdk/issues/791)) ([3a66cda](https://github.com/substance-labs/cow-sdk/commit/3a66cdaf4153c98bb115774e1694cc516509a0c2))
+* release main ([#794](https://github.com/substance-labs/cow-sdk/issues/794)) ([6f11dfd](https://github.com/substance-labs/cow-sdk/commit/6f11dfdca4cecee7d036fc2ae49c886832db25bf))
+* release main ([#802](https://github.com/substance-labs/cow-sdk/issues/802)) ([5583ca4](https://github.com/substance-labs/cow-sdk/commit/5583ca446f498416565b79485bcaf7708f1ba224))
+* release main ([#805](https://github.com/substance-labs/cow-sdk/issues/805)) ([adbc6a9](https://github.com/substance-labs/cow-sdk/commit/adbc6a98eb15b02a87215a1bd446982553219b41))
+* release main ([#806](https://github.com/substance-labs/cow-sdk/issues/806)) ([93d805f](https://github.com/substance-labs/cow-sdk/commit/93d805fb93820b8c8ce2e2c2ce7f505243c1bd30))
+* release main ([#811](https://github.com/substance-labs/cow-sdk/issues/811)) ([816c990](https://github.com/substance-labs/cow-sdk/commit/816c990e87a39a122c918d6748b2f254350c4be5))
+* release main ([#812](https://github.com/substance-labs/cow-sdk/issues/812)) ([4981e10](https://github.com/substance-labs/cow-sdk/commit/4981e1060718f701ad3a6a096e71ef2e544f29fe))
+* release main ([#816](https://github.com/substance-labs/cow-sdk/issues/816)) ([aad43b3](https://github.com/substance-labs/cow-sdk/commit/aad43b32d795ad4f7b8d57e1cb06e3dd78458202))
+* release main ([#819](https://github.com/substance-labs/cow-sdk/issues/819)) ([5f7ecfb](https://github.com/substance-labs/cow-sdk/commit/5f7ecfba74abc721b80c5fe6f4997f9518c40788))
+* release main ([#826](https://github.com/substance-labs/cow-sdk/issues/826)) ([baaa708](https://github.com/substance-labs/cow-sdk/commit/baaa7088ac15b89fb83310e54aa52f09d19132ff))
+* release main ([#832](https://github.com/substance-labs/cow-sdk/issues/832)) ([5dafcb8](https://github.com/substance-labs/cow-sdk/commit/5dafcb8ec5593250dba1ff6e9fdbf8eb11d974cf))
+* release main ([#836](https://github.com/substance-labs/cow-sdk/issues/836)) ([a7e1af9](https://github.com/substance-labs/cow-sdk/commit/a7e1af993f501e313fb90573148b3d2d42e5168a))
+* release main ([#840](https://github.com/substance-labs/cow-sdk/issues/840)) ([1a22c69](https://github.com/substance-labs/cow-sdk/commit/1a22c69592e283bb1a15ece9799a5b6f8c446765))
+* release main ([#842](https://github.com/substance-labs/cow-sdk/issues/842)) ([c4c238d](https://github.com/substance-labs/cow-sdk/commit/c4c238d990d2089a66f9d8dc7401cd71b63d394b))
+* release main ([#843](https://github.com/substance-labs/cow-sdk/issues/843)) ([7b41c2d](https://github.com/substance-labs/cow-sdk/commit/7b41c2ddcea33a49f519d7c816ad32cf2d6f9757))
+* release main ([#848](https://github.com/substance-labs/cow-sdk/issues/848)) ([a56dead](https://github.com/substance-labs/cow-sdk/commit/a56dead934dd2d7d72583d996ea9f61e6091534b))
+* release main ([#857](https://github.com/substance-labs/cow-sdk/issues/857)) ([17fcfc5](https://github.com/substance-labs/cow-sdk/commit/17fcfc590be8529dc4fe05b1c472fef1b07b47f4))
+* release main ([#861](https://github.com/substance-labs/cow-sdk/issues/861)) ([c178e68](https://github.com/substance-labs/cow-sdk/commit/c178e68beaf46bb33b1ad2ec97212eec62172816))
+* release main ([#864](https://github.com/substance-labs/cow-sdk/issues/864)) ([a5207e0](https://github.com/substance-labs/cow-sdk/commit/a5207e0dba212942ecf5564c8d01c9c75c77f647))
+* release main ([#866](https://github.com/substance-labs/cow-sdk/issues/866)) ([5c1062c](https://github.com/substance-labs/cow-sdk/commit/5c1062c3111a7653345ee8c978554aec54979965))
+* release main ([#868](https://github.com/substance-labs/cow-sdk/issues/868)) ([4d85959](https://github.com/substance-labs/cow-sdk/commit/4d85959ccd08e8ab9a1b35cf7a4d5d663365d127))
+* release main ([#870](https://github.com/substance-labs/cow-sdk/issues/870)) ([00c3dbd](https://github.com/substance-labs/cow-sdk/commit/00c3dbd41c086ff9a51d5e5a30648615d4c66d0d))
+* release main ([#880](https://github.com/substance-labs/cow-sdk/issues/880)) ([447b5e1](https://github.com/substance-labs/cow-sdk/commit/447b5e17b36a800a5f6fe6e4f890d2d77d017495))
+* release main ([#886](https://github.com/substance-labs/cow-sdk/issues/886)) ([5115efe](https://github.com/substance-labs/cow-sdk/commit/5115efeb6f6f591c5eae653c63c5c5930eb24331))
+* release main ([#887](https://github.com/substance-labs/cow-sdk/issues/887)) ([74393ee](https://github.com/substance-labs/cow-sdk/commit/74393ee2923a2932584998169daca6ce3c2da60c))
+* release main ([#889](https://github.com/substance-labs/cow-sdk/issues/889)) ([8659102](https://github.com/substance-labs/cow-sdk/commit/865910213586d59f709c8e34726f799503bdfafb))
+* release main ([#894](https://github.com/substance-labs/cow-sdk/issues/894)) ([6ca7944](https://github.com/substance-labs/cow-sdk/commit/6ca794476e3411ab5a3774d6cd88804b9f875d29))
+* release main ([#900](https://github.com/substance-labs/cow-sdk/issues/900)) ([3fdbda2](https://github.com/substance-labs/cow-sdk/commit/3fdbda2042db284c73e3b16b90961e1c31a475cd))
+* revert not published release ([5facf05](https://github.com/substance-labs/cow-sdk/commit/5facf05c67121404b7b5aa1e77950961b06eca81))
+* revert release ([#634](https://github.com/substance-labs/cow-sdk/issues/634)) ([fc7bf61](https://github.com/substance-labs/cow-sdk/commit/fc7bf61444619d4b2c3a3dd55b7ce52c197b1878))
+* revert release ([#833](https://github.com/substance-labs/cow-sdk/issues/833)) ([0c40a9b](https://github.com/substance-labs/cow-sdk/commit/0c40a9b3ee828c7ede66576f02e1b571e96140cd))
+* revert revert Ink network ([#789](https://github.com/substance-labs/cow-sdk/issues/789)) ([a00dbbd](https://github.com/substance-labs/cow-sdk/commit/a00dbbd6a26238bcee2d4452487d16551560c59f))
+* update debt swap test ([#621](https://github.com/substance-labs/cow-sdk/issues/621)) ([5e0a66b](https://github.com/substance-labs/cow-sdk/commit/5e0a66b2d7a8c34adf4dc50e3640f462a1e13188))
+* update repay test ([#619](https://github.com/substance-labs/cow-sdk/issues/619)) ([8c81142](https://github.com/substance-labs/cow-sdk/commit/8c81142197e0b05c73ac7bf84cb9ccd022171d64))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @cowprotocol/sdk-common bumped to 1.0.0
+    * @cowprotocol/sdk-app-data bumped to 6.0.0
+    * @cowprotocol/sdk-trading bumped to 3.0.0
+    * @cowprotocol/sdk-order-signing bumped to 2.0.0
+    * @cowprotocol/sdk-order-book bumped to 5.0.0
+    * @cowprotocol/sdk-config bumped to 3.0.0
+  * devDependencies
+    * @cowprotocol/sdk-ethers-v5-adapter bumped to 1.0.0
+    * @cowprotocol/sdk-ethers-v6-adapter bumped to 1.0.0
+    * @cowprotocol/sdk-viem-adapter bumped to 1.0.0
+
 ## [3.2.0](https://github.com/cowprotocol/cow-sdk/compare/sdk-flash-loans-v3.1.2...sdk-flash-loans-v3.2.0) (2026-06-15)
 
 
